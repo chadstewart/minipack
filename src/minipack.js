@@ -246,4 +246,4 @@ function bundle(graph) {
 const graph = createGraph('./example/entry.js');
 const result = bundle(graph);
 
-console.log(result);
+fs.writeFileSync('bundled.js', result);
